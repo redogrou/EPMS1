@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Create Client</title>
+    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../public/css/styles.css">
+    <link rel="stylesheet" href="../public/css/style1.css">
+    <link rel="stylesheet" href="../public/css/style3.css">
+    <link rel="stylesheet" href="../public/css/style4.css">
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.1.0/css/bootstrap-switch-button.min.css"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="sb-nav-fixed mt-2">
+    <nav class="sb-topnav navbar navbar-expand navbar-dark sb-sidenav-dark" style="background-color: #1C4E80;">
+
+        <a class="navbar-brand" href="index.html">R-Lawyer</a>
+
+        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i
+                class="fas fa-bars"></i></button>
+
+        <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+
+        </form>
+
+        <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false" style="color: white;"><i class="fas fa-user fa-fw"
+                        style="color: white;"></i></a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#!">Settings</a></li>
+                    <li><a class="dropdown-item" href="#!">Activity Log</a></li>
+                    <li>
+                        <hr class="dropdown-divider" />
+                    </li>
+                    <li><a class="dropdown-item" href="#!">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav" style="">
+            <nav class="sb-sidenav accordion sb-sidenav-dark " id="sidenavAccordion" style="background-color: #1C4E80;">
+                <div class="sb-sidenav-menu">
+                    <div class="nav">
+                        <div class="sb-sidenav-menu-heading" style="color: white;">Core</div>
+                        <a class="nav-link" href="index.html" style="color: white;">
+                            <div class="sb-nav-link-icon" style="color: white;"><i class="fas fa-tachometer-alt"></i>
+                            </div>
+                            Dashboard
+                        </a>
+
+                        <div class="sb-sidenav-menu-heading" style="color: white;">Document</div>
+                        <a class="nav-link collapsed" href="#" style="color: white;" data-bs-toggle="collapse"
+                            data-bs-target="#collapseLayouts1" aria-expanded="false" aria-controls="collapseLayouts">
+                            <div class="sb-nav-link-icon" style="color: white;"><i style="color: white;"
+                                    class="fas fa-columns"></i></div>
+                            Create Document
+                            <div class="sb-sidenav-collapse-arrow" style="color: white;"><i class="fas fa-angle-down"
+                                    style="color: white;"></i></div>
+                        </a>
+                        <div class="collapse" id="collapseLayouts1" aria-labelledby="headingOne"
+                            data-bs-parent="#sidenavAccordion" style="color: white;">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="./Createclient.html" style="color: white;">Writ Petition</a>
+                                <a class="nav-link" href="Create-case.html" style="color: white;">User Master</a>
+                                <a class="nav-link" href="#" style="color: white;">Employee Master</a>
+                            </nav>
+                        </div>
+
+                        <div class="sb-sidenav-menu-heading" style="color: white;">Masters</div>
+                        <a class="nav-link collapsed" href="#" style="color: white;" data-bs-toggle="collapse"
+                            data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                            <div class="sb-nav-link-icon" style="color: white;"><i style="color: white;"
+                                    class="fas fa-columns"></i></div>
+                            Masters
+                            <div class="sb-sidenav-collapse-arrow" style="color: white;"><i class="fas fa-angle-down"
+                                    style="color: white;"></i></div>
+                        </a>
+                        <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne"
+                            data-bs-parent="#sidenavAccordion" style="color: white;">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="./Createclient.html" style="color: white;">Client Master</a>
+                                <a class="nav-link" href="Create-case.html" style="color: white;">User Master</a>
+                                <a class="nav-link" href="#" style="color: white;">Employee Master</a>
+                            </nav>
+                        </div>
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages"
+                            aria-expanded="false" aria-controls="collapsePages" style="color: white;">
+                            <div class="sb-nav-link-icon"><i class="fas fa-book-open" style="color: white;"></i></div>
+                            Pages
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"
+                                    style="color: white;"></i></div>
+                        </a>
+                        <div class="collapse" id="collapsePages" aria-labelledby="headingTwo"
+                            data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
+                                    data-bs-target="#pagesCollapseAuth" aria-expanded="false"
+                                    aria-controls="pagesCollapseAuth" style="color: white;">
+                                    Authentication
+                                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                </a>
+                                <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne"
+                                    data-bs-parent="#sidenavAccordionPages">
+                                    <nav class="sb-sidenav-menu-nested nav">
+                                        <a style="color: white;" class="nav-link" href="./loginpage.html">Login</a>
+                                        <a style="color: white;" class="nav-link"
+                                            href="./Registerpage.html">Register</a>
+                                        <a style="color: white;" class="nav-link" href="./forgetpass.html">Forgot
+                                            Password</a>
+                                    </nav>
+                                </div>
+
+                            </nav>
+                        </div>
+                        <div class="sb-sidenav-menu-heading" style="color: white;">HELP</div>
+                        <a class="nav-link" href="#" style="color: white;">
+                            <div class="sb-nav-link-icon"><i class="fas fa-chart-area" style="color: white;"></i></div>
+                            Get Call Back
+                        </a>
+                        <a class="nav-link" href="#" style="color: white;">
+                            <div class="sb-nav-link-icon"><i class="fas fa-table" style="color: white;"></i></div>
+                            Chat with us
+                        </a>
+                    </div>
+                </div>
+                <div class="sb-sidenav-footer">
+                    <div class="small">Logged in as:</div>
+                    Admin
+                </div>
+            </nav>
+        </div>
+
+        <div id="layoutSidenav_content">
+            <div class="container-fluid shadow mt-3">
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <nav class="navbar mt-2">
+                            <div>
+                                <h3 class="create_heading">Create Client</h3>
+                            </div>
+                            <div id="client_btn">
+                                <a href="./AddProduct.html" class="btn btn-sm m-auto">Add Client</a>
+                            </div>
+                        </nav>
+
+                        <div class="container mb-5 mt-5"
+                            style="border: 1px #CED4DA solid;  border-radius: 10px; background-color: white; ">
+
+                            <form id= "myForm" class="row g-3 mt-4 mb-2" action="/Create-client" method="post">
+                                <div class="text col-md-4">
+                                    <label for="clientId" class="form-label">Client Id</label>
+                                    <input type="text" class="form-control form-control-sm" id="clientId"
+                                        name="clientId">
+
+                                </div>
+                                <div class="text col-md-4">
+                                    <label for="toc">Types Of Client:</label>
+                                    <select class="form-control form-control-sm" name="clienttype" id="toc"
+                                        onchange="updatedesignation()">
+                                        <option value="individual">Individual</option>
+                                        <option value="organisation">Organisation/Entity</option>
+                                    </select>
+                                </div>
+                                <div class="text col-md-4">
+                                    <label for="selectdesi">Select Designation:</label>
+                                    <select class="form-control form-control-sm" name="designation" id="selectdesi">
+                                        <option value="Manager">Manager</option>
+                                        <option value="director">Director</option>
+                                        <option value="owner">"Owner</option>
+                                        <option value="partner">Partner</option>
+
+                                    </select>
+                                </div>
+                                <div class="text col-md-4">
+                                    <label for="cfname" class="col-form-label">Client's Full Name</label>
+                                    <input type="text" id="cfname" name="name" class="form-control form-control-sm"
+                                        placeholder="Name as per PAN">
+
+                                </div>
+                                <div class="text col-md-4">
+                                    <label for="address" class="col-form-label">Address</label>
+                                    <input type="text" id="address" name="address" class="form-control form-control-sm"
+                                        placeholder="Line 1">
+                                </div>
+                                <div class="text col-md-4">
+                                    <label for="address" class="col-form-label">Address2</label>
+                                    <input type="text" id="address2" name="address2"
+                                        class="form-control form-control-sm" placeholder="Line 2">
+                                </div>
+                                <div class="text col-md-4">
+                                    <label for="city" class="col-form-label">City</label>
+                                    <input type="text" id="city" name="city" class="form-control form-control-sm"
+                                        placeholder="City Name">
+                                </div>
+                                <div class="text col-md-4">
+                                    <label for="village" class="col-form-label">Village</label>
+                                    <input type="text" id="village" name="village" class="form-control form-control-sm"
+                                        placeholder="Village Name">
+                                </div>
+                                <div class="text col-md-4">
+                                    <label for="zip" class="col-form-label">Zip</label>
+                                    <input type="number" id="zip" name="zip" class="form-control form-control-sm"
+                                        placeholder="Postal Code" maxlength="6">
+                                </div>
+                                <div class="text col-md-4">
+                                    <label for="mono" class="col-form-label">Contact Details</label>
+                                    <input type="number" id="mono" name="contact" class="form-control form-control-sm"
+                                        placeholder="Mobile Number" maxlength="10">
+                                </div>
+                                <div class="text col-md-4">
+                                    <label for="emailId" class="col-form-label">Email Id</label>
+                                    <input type="text" id="emailId" name="email" class="form-control form-control-sm"
+                                        placeholder="Email I'd">
+                                </div>
+                                <div class="text col-md-4">
+                                    <label for="dob" class="col-form-label">Date of Birth:</label>
+                                    <input type="date" class="form-control form-control-sm" id="dob" name="dob">
+                                </div>
+                                <div class="text col-md-4">
+                                    <label for="dob" class="col-form-label">Date of Incorporation:</label>
+                                    <input type="date" class="form-control form-control-sm" id="incorporation_date"
+                                        name="incorporation_date">
+                                </div>
+                                <div class="text col-md-12 mb-3">
+                                    <div id="client_btn" style="padding: 2rem;">
+                                        <button class="btn btn-sm mt-4 ml-2" type="submit"
+                                            onsubmit="return validateInputs()">Submit</button>
+                                        <button type="button" class="btn btn-sm mt-4 ml-2"
+                                            onclick="updateForm()">Update</button>
+
+                                        <button class="btn btn-sm mt-4 ml-2">Clear</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid shadow mt-5 mb-5">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="container-fluid mb-4 mt-4" style="border-radius: 10px;">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="d-flex justify-content-end">
+                                        <form class="form-inline my-2 my-lg-0">
+                                            <div class="d-flex justify-content-end">
+                                                <div class="d-flex justify-content-end">
+                                                    <input class="form-control form-control-sm mr-sm-2" type="search"
+                                                        id="tableSearch" placeholder="Search" aria-label="Search">
+                                                    <a class="btn btn-sm" id="searchBtn"
+                                                        style="border: 2px black solid; background-color: #1C4E80; font-family: 'Montserrat', sans-serif; font-weight: bold; color: white;">Search</a>
+                                                </div>
+
+
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="table-responsive table-sm mt-3 " style="border-radius: 10px;">
+                                    <table class="table table-hover table-striped">
+                                        <thead class="table">
+                                            <tr class="table_tr">
+                                                <th scope="col">Sr.No</th>
+                                                <th scope="col">Client Id</th>
+                                                <th scope="col">Client Name</th>
+                                                <th scope="col">Type Of Client</th>
+                                                <th scope="col">Designation</th>
+                                                <th scope="col">City</th>
+                                                <th scope="col">Email Id</th>
+                                                <th scope="col">Contact No.</th>
+                                                <th>Edit</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <% users.forEach(function(user) { %>
+                                                <tr class="table_tr1">
+                                                    <td>
+                                                        <%= user.Sr_No %>
+                                                    </td>
+                                                    <td>
+                                                        <%= user.clientId %>
+                                                    </td>
+                                                    <td>
+                                                        <%= user.name %>
+                                                    </td>
+                                                    <td>
+                                                        <%= user.clienttype %>
+                                                    </td>
+                                                    <td>
+                                                        <%= user.designation %>
+                                                    </td>
+                                                    <td>
+                                                        <%= user.city %>
+                                                    </td>
+                                                    <td>
+                                                        <%= user.email %>
+                                                    </td>
+                                                    <td>
+                                                        <%= user.contact %>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="edit-icon" onclick="editRow(this)">
+                                                            <i class="fa-solid fa-pen-to-square ml-3"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+
+                                                <% }) %>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="py-4 bg-light mt-auto">
+                <div class="container-fluid px-4">
+                    <div class="d-flex align-items-center justify-content-between small">
+                        <div class="text-muted">Copyright &copy; www.Redogroup.in</div>
+                        <div>
+                            <a href="#">Privacy Policy</a>
+                            &middot;
+                            <a href="#">Terms &amp; Conditions</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        function updatedesignation() {
+            var toc = document.getElementById("toc");
+            var selectdesi = document.getElementById("selectdesi");
+            var selectedState = toc.value;
+
+            // Clear existing options
+            selectdesi.innerHTML = "";
+
+            // Add new city options based on the selected state
+            if (selectedState === "individual") {
+                var cities = ["Self"];
+            } else if (selectedState === "organisation") {
+                var cities = ["Manager", "Director", "Owner", "Partner"];
+            }
+            // Add more conditions for additional states
+
+            // Populate the city options
+            cities.forEach(function (city) {
+                var option = document.createElement("option");
+                option.text = city;
+                selectdesi.add(option);
+            });
+        }
+
+        //validation code Js
+        function validateInputs() {
+            var name = document.getElementById("cfname").value;
+            var address1 = document.getElementById('address').value;
+            var address22 = document.getElementById('address2').value;
+            var city1 = document.getElementById('city').value;
+            var village1 = document.getElementById('village').value;
+            var zip1 = document.getElementById('zip').value;
+            var mono1 = document.getElementById('mono').value;
+            var emailId1 = document.getElementById('emailId').value;
+            console.log(name);
+            var alphaExp = /^[a-zA-Z\s]+$/;
+            var phoneExp = /^[0-9]{10}$/;
+            var zipExp = /^[0-5]{6}$/;
+
+            const isValidEmail = (emailId) => {
+                const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                return re.test(String(emailId).toLowerCase());
+            };
+
+            if (name == '') {
+                alert("Client's Full Name is required.");
+            }
+
+            else if (address1 == '') {
+                alert('Address must be required');
+            }
+
+            else if (address22 == '') {
+                alert('Address must be required');
+            }
+
+            else if (city1 == '') {
+                alert("City must be filled.");
+            }
+            else if (!alphaExp.test(city1)) {
+                alert("Proper City must be filled.");
+            }
+
+
+            else if (zip1 === '') {
+                alert('Zip Code is required.');
+            }
+            else if (!zipExp.test(zip1)) {
+                alert('Zip code must be in 6 charaters only.');
+            }
+            else if (mono1 === '') {
+                alert('Mobile No must be required.');
+            }
+            else if (!phoneExp.test(mono1)) {
+                alert('Mobile No. must be required and must be in');
+            }
+            else if (emailId1 == '') {
+                alert('Email is required');
+            }
+            else if (!isValidEmail(emailId1)) {
+                alert('Prorer Email Id must be provided and use @gmail.com');
+            }
+            else {
+                alert("Client is Created Successfully.")
+            }
+        }
+        console.log("Client is Created Successfully.")
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const searchInput = document.getElementById('tableSearch');
+            const tableRows = document.querySelectorAll('.table tbody tr');
+
+            searchInput.addEventListener('input', function () {
+                const searchValue = this.value.trim().toLowerCase();
+
+                tableRows.forEach(function (row) {
+                    const textContent = row.textContent.toLowerCase();
+                    if (textContent.includes(searchValue)) {
+                        row.style.display = '';
+                    } else {
+                        row.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Function to handle editing a row
+        function editRow(button) {
+            // Get the row which contains the clicked button
+            var row = button.closest('tr');
+
+            // Extract data from the row
+            var clientId = row.cells[1].innerText;
+            var clientName = row.cells[2].innerText;
+            var TypeOfClient = row.cells[3].innerText;
+            var Designation = row.cells[4].innerText;
+            var City = row.cells[5].innerText;
+            var EmailId = row.cells[6].innerText;
+            var ContactNo = row.cells[7].innerText;
+
+
+            // Populate the form with the extracted data for editing
+            document.getElementById('clientId').value = clientId;
+            document.getElementById('cfname').value = clientName;
+            document.getElementById('toc').value = TypeOfClient;
+            document.getElementById('selectdesi').value = Designation;
+            document.getElementById('city').value = City;
+            document.getElementById('emailId').value = EmailId;
+            document.getElementById('mono').value = ContactNo;
+
+
+
+        }
+
+        function updateForm() {
+            if (validateInputs2()) {
+                var formData = new FormData(document.getElementById("myForm")); 
+                var xhr = new XMLHttpRequest();
+                xhr.open("POST", "Createclient"); // Specify the URL to which you want to submit the form data
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState === XMLHttpRequest.DONE) {
+                        if (xhr.status === 200) {
+                            // Handle successful form submission
+                            alert("Form submitted successfully!");
+                        } else {
+                            // Handle form submission error
+                            alert("Error submitting form. Please try again later.");
+                        }
+                    }
+                };
+                xhr.send(formData);
+            }
+        }
+
+        function validateInputs2() {
+
+            // Extract the edited data
+            var clientId = document.getElementById('clientId').value;
+            var clientName = document.getElementById('cfname').value;
+            var TypeOfClient = document.getElementById('toc').value;
+            var Designation = document.getElementById('selectdesi').value;
+            var City = document.getElementById('city').value;
+            var EmailId = document.getElementById('emailId').value;
+            var ContactNo = document.getElementById('mono').value;
+
+            // Find the row that needs to be updated
+            var table = document.querySelector('.table tbody');
+            var rows = table.querySelectorAll('tr');
+            rows.forEach(function (row) {
+                if (row.cells[1].innerText === clientId) { // Assuming Client Id is unique
+                    // Update the corresponding row with the edited data
+                    row.cells[2].innerText = clientName;
+                    row.cells[3].innerText = TypeOfClient;
+                    row.cells[4].innerText = Designation;
+                    row.cells[5].innerText = City;
+                    row.cells[6].innerText = EmailId;
+                    row.cells[7].innerText = ContactNo;
+
+                    // Optionally, you can clear the form after updating the row
+                    document.getElementById('clientId').value = '';
+                    document.getElementById('cfname').value = '';
+                    document.getElementById('toc').value = '';
+                    document.getElementById('selectdesi').value = '';
+                    document.getElementById('city').value = '';
+                    document.getElementById('emailId').value = '';
+                    document.getElementById('mono').value = '';
+
+                    // Exit the loop since we've updated the row
+
+                    return false;
+                }
+
+            });
+
+            // Optionally, prevent the default form submission
+            return false;
+        }
+
+
+
+
+
+
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
